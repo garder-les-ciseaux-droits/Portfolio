@@ -33,8 +33,8 @@ function setDarkMode(){
   <main class="w-full h-72 mt-20 px-10 max-w-screen-xl mx-auto flex items-center">
     <div class="dark:text-white text-black  font-mono space-y-10">
       <span>Hey, I'm</span>
-      <h1 class="text-6xl w-fit bg-gradient-to-r from-[#9845E8] via-[#33D2FF] to-[#DD5789] bg-clip-text text-transparent">Ivan Vorobei</h1>
-      <p>I'm a front-end developer specializing in creating user-friendly and stylish web applications using Vue.js and Tailwind CSS. I work with APIs to integrate external services and add interactivity to websites. I develop custom websites, ranging from small to medium complexity projects. I can implement any design and quickly make a website interactive using JavaScript, providing efficient and effective solutions for individuals and businesses. </p>
+      <h1 class="text-6xl w-fit bg-gradient-to-r from-[#9845E8] via-[#33D2FF] to-[#DD5789] bg-clip-text text-transparent drop-shadow-xl">Ivan Vorobei</h1>
+      <p>I'm a front-end developer with 1 year real working experience in creating user-friendly and stylish web applications using Vue.js and Tailwind CSS. I work with APIs to integrate external services and add interactivity to websites. I develop custom websites, ranging from small to medium complexity projects. I can implement any design and quickly make a website interactive using JavaScript, providing efficient and effective solutions for individuals and businesses. </p>
     </div>
   </main>
   <section class="w-full h-12 mt-48 px-10 max-w-screen-xl mx-auto flex items-center dark:text-white text-black space-x-2 font-mono">
@@ -60,7 +60,7 @@ function setDarkMode(){
     
     </div>
     <div class="bg-gradient-to-r from-[#D24074] to-[#6518B4] w-48 h-12 p-px rounded-sm">
-      <button class=" dark:bg-[#141414] dark:hover:bg-black hover:bg-[#d3d3d3] shadow-xl bg-white w-full h-full text-center rounded-sm text-sm flex justify-center items-center gap-2">
+      <a href="https://github.com/garder-les-ciseaux-droits" class=" dark:bg-[#141414] dark:hover:bg-black hover:bg-[#d3d3d3] shadow-xl bg-white w-full h-full text-center rounded-sm text-sm flex justify-center items-center gap-2">
         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -79,7 +79,7 @@ function setDarkMode(){
         </svg>
         
          GitHub
-      </button>
+      </a>
     </div>
   </section>
 
@@ -91,7 +91,7 @@ function setDarkMode(){
         <div class="space-y-2 mt-4 h-24 ">
           <div class=" flex justify-between">
             <span class="font-bold">VTubers Insights</span>
-            <a href="#"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
+            <a href="https://garder-les-ciseaux-droits.github.io/vtuber-insights/"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -118,7 +118,7 @@ function setDarkMode(){
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between ">
             <span class="font-bold">ChatGPT Interface</span>
-            <a href="#"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
+            <a href="https://garder-les-ciseaux-droits.github.io/chat-got-project/"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -145,7 +145,7 @@ function setDarkMode(){
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between ">
             <span class="font-bold">Nail Courses(Meow)</span>
-            <a href="#"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
+            <a href="https://garder-les-ciseaux-droits.github.io/eva-website/"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -174,7 +174,7 @@ function setDarkMode(){
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between">
             <span class="font-bold">Tournaments Website</span>
-            <a href="#"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
+            <a href="https://garder-les-ciseaux-droits.github.io/tournament-website/"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -201,7 +201,7 @@ function setDarkMode(){
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between">
             <span class="font-bold">Luxury Castle Selling</span>
-            <a href="#"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
+            <a href="https://garder-les-ciseaux-droits.github.io/castle-selling/#/"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -229,7 +229,7 @@ function setDarkMode(){
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between">
             <span class="font-bold">Evan Vosh Page</span>
-            <a href="#"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
+            <a href="https://garder-les-ciseaux-droits.github.io/voshpage/#/"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -256,6 +256,26 @@ function setDarkMode(){
       
       
     </div>
+  </section>
+
+  <section  class="w-full max-w-screen-xl px-10 mt-48 mx-auto h-auto  dark:text-white text-black flex">
+    <div class="w-1/4 h-full font-mono">
+      <h3>EXPERIENCE & SKILLS</h3>
+    </div>
+    <div class="w-3/4 h-[50rem] flex flex-col">
+      <div class="w-full h-48 text-start ">
+        <p class="flex justify-between">
+          <span class="text-lg">1 YEAR OF REAL FREELANCE EXPERIENCE WITH INDIVIDUALS AND BUSINESS</span>
+          <span class="font-thin text-sm">June 2023 - Present</span>
+        </p>
+        <p class="text-indigo-400 font-thin">Montenegro, Online</p>
+        <div class="mt-6">
+          <p class="font-thin text-opacity-80 dark:text-white text-black">— developed my first personalized ChatGPT project with OpenAI API integration</p>
+        </div>
+       
+      </div>
+    </div>
+   
   </section>
 </template>
 
