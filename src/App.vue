@@ -20,7 +20,8 @@ function setDarkMode(){
 </script>
 
 <template>
-  <header class="w-full h-24 flex justify-between items-center container mx-auto max-w-screen-xl px-10">
+  <header>
+  <div class="w-full h-24 flex justify-between items-center container mx-auto max-w-screen-xl px-10">
     <span class="dark:text-white text-black font-mono">IV. Portfolio</span>
     <nav class="dark:text-white text-black space-x-6 flex font-mono">
       <a class="hover:text-indigo-400" href="#">Projects</a>
@@ -28,15 +29,19 @@ function setDarkMode(){
       <a class="hover:text-[#33D2FF]" href="#">Contact</a>
       <SunIcon @click="setDarkMode" class="h-7 text-black dark:text-white cursor-pointer"/>
     </nav>
-  </header>
+  </div>
 
-  <main class="w-full h-72 mt-20 px-10 max-w-screen-xl mx-auto flex items-center">
+  <div class="w-full h-72 mt-20 px-10 max-w-screen-xl mx-auto flex items-center">
     <div class="dark:text-white text-black  font-mono space-y-10">
       <span>Hey, I'm</span>
       <h1 class="text-6xl w-fit bg-gradient-to-r from-[#9845E8] via-[#33D2FF] to-[#DD5789] bg-clip-text text-transparent drop-shadow-xl">Ivan Vorobei</h1>
-      <p>I'm a front-end developer with 1 year real working experience in creating user-friendly and stylish web applications using Vue.js and Tailwind CSS. I work with APIs to integrate external services and add interactivity to websites. I develop custom websites, ranging from small to medium complexity projects. I can implement any design and quickly make a website interactive using JavaScript, providing efficient and effective solutions for individuals and businesses. </p>
+      <p>I'm a front-end developer with real working experience in creating user-friendly and stylish web applications using Vue.js and Tailwind CSS. I work with APIs to integrate external services and add interactivity to websites. I develop custom websites, ranging from small to medium complexity projects. I can implement any design and quickly make a website interactive using JavaScript, providing efficient and effective solutions for individuals and businesses. </p>
     </div>
-  </main>
+  </div>
+
+
+
+
   <section class="w-full h-12 mt-48 px-10 max-w-screen-xl mx-auto flex items-center dark:text-white text-black space-x-2 font-mono">
     <div class="bg-gradient-to-r from-[#9358F7] to-[#10D7E2] w-48 h-12 p-px rounded-sm">
       <button class=" dark:bg-[#141414] dark:hover:bg-black hover:bg-[#d3d3d3] shadow-xl bg-white w-full h-full text-center rounded-sm text-sm flex justify-center items-center gap-2">
@@ -83,10 +88,12 @@ function setDarkMode(){
     </div>
   </section>
 
-  <section class="w-full max-w-screen-xl px-10 mt-32 mx-auto h-auto  dark:text-white text-black">
+</header>
+
+  <main class="w-full max-w-screen-xl px-10 mt-32 mx-auto h-auto  dark:text-white text-black">
     <h2 class="font-mono">FEATURED PROJECTS</h2>
     <div class="w-full h-full mt-16 grid grid-rows-3 grid-cols-2 gap-x-24 gap-y-12 ">
-      <div class="w-full h-auto">
+      <div class="w-full h-auto bg-transparent hover:bg-black/10 p-2 rounded-lg">
         <img src="/src/assets/websites/site6.png">
         <div class="space-y-2 mt-4 h-24 ">
           <div class=" flex justify-between">
@@ -113,7 +120,7 @@ function setDarkMode(){
           <p class="font-thin text-indigo-400 text-sm">Vue.js, Tailwind, JavaScript</p>
         </div>
       </div>
-      <div class="w-full h-auto">
+      <div class="w-full h-auto bg-transparent hover:bg-black/10 p-2 rounded-lg">
         <img src="/src/assets/websites/site2.png">
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between ">
@@ -140,7 +147,34 @@ function setDarkMode(){
           <p class="font-thin text-indigo-400 text-sm">Vue.js, Tailwind</p>
         </div>
       </div>
-      <div class="w-full h-auto">
+      <div class="w-full h-auto bg-transparent hover:bg-black/10 p-2 rounded-lg">
+        <img src="/src/assets/websites/site7.png">
+        <div class="space-y-2 mt-4 h-24 ">
+          <div class="flex justify-between">
+            <span class="font-bold">Livermore Trading Tables</span>
+            <a href="https://garder-les-ciseaux-droits.github.io/livermores-tables/"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>github [#142]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="currentColor">
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            </a>
+          </div>
+          <p class="font-thin text-sm">Special Jesse Livermore's tables for stock trading with local server and custom API.</p>
+          <p class="font-thin text-indigo-400 text-sm">JavaScript, HTML, CSS</p>
+        </div>
+      </div>
+      <div class="w-full h-auto bg-transparent hover:bg-black/10 p-2 rounded-lg">
         <img src="/src/assets/websites/site1.png">
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between ">
@@ -169,7 +203,7 @@ function setDarkMode(){
       </div>
       
 
-      <div class="w-full h-auto">
+      <div class="w-full h-auto bg-transparent hover:bg-black/10 p-2 rounded-lg">
         <img src="/src/assets/websites/site3-2.png">
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between">
@@ -196,7 +230,7 @@ function setDarkMode(){
           <p class="font-thin text-indigo-400 text-sm">Vue.js, Tailwind</p>
         </div>
       </div>
-      <div class="w-full h-auto">
+      <div class="w-full h-auto bg-transparent hover:bg-black/10 p-2 rounded-lg">
         <img src="/src/assets/websites/site4.png">
         <div class="space-y-2 mt-4 h-24 ">
           <div class="flex justify-between">
@@ -219,63 +253,73 @@ function setDarkMode(){
             </svg>
             </a>
           </div>
-          <p class="font-thin text-sm">A catalog of locks with personalized business information.</p>
+          <p class="font-thin text-sm">A catalog of castles with personalized business information.</p>
           <p class="font-thin text-indigo-400 text-sm">Vue.js, Tailwind</p>
         </div>
       </div>
 
-      <div class="w-full h-auto">
-        <img src="/src/assets/websites/site5.png">
-        <div class="space-y-2 mt-4 h-24 ">
-          <div class="flex justify-between">
-            <span class="font-bold">Evan Vosh Page</span>
-            <a href="https://garder-les-ciseaux-droits.github.io/voshpage/#/"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6 text-black dark:text-white" fill="currentColor">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <title>github [#142]</title>
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="currentColor">
-                    <g id="icons" transform="translate(56.000000, 160.000000)">
-                      <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-            </a>
-          </div>
-          <p class="font-thin text-sm">Customized website to promote books and author with on-site reading.</p>
-          <p class="font-thin text-indigo-400 text-sm">Vue.js, Tailwind</p>
-        </div>
-      </div>
       
      
       
       
     </div>
-  </section>
+  </main>
 
-  <section  class="w-full max-w-screen-xl px-10 mt-48 mx-auto h-auto  dark:text-white text-black flex">
+  <section  class="w-full max-w-screen-xl px-10 mt-48 mx-auto h-[20rem] dark:text-white text-black flex">
     <div class="w-1/4 h-full font-mono">
-      <h3>EXPERIENCE & SKILLS</h3>
+      <h3>EXPERIENCE</h3>
     </div>
     <div class="w-3/4 h-[50rem] flex flex-col">
       <div class="w-full h-48 text-start ">
         <p class="flex justify-between">
-          <span class="text-lg">1 YEAR OF REAL FREELANCE EXPERIENCE WITH INDIVIDUALS AND BUSINESS</span>
+          <span class="text-lg font-bold">1 YEAR OF REAL FREELANCE EXPERIENCE WITH INDIVIDUALS AND BUSINESS</span>
           <span class="font-thin text-sm">June 2023 - Present</span>
         </p>
         <p class="text-indigo-400 font-thin">Montenegro, Online</p>
-        <div class="mt-6">
-          <p class="font-thin text-opacity-80 dark:text-white text-black">— developed my first personalized ChatGPT project with OpenAI API integration</p>
+        <div class="mt-6 space-y-6">
+          <p class=" text-opacity-80 dark:text-white text-black">— developed my first personalized <span class="font-bold">ChatGPT project</span> with OpenAI API integration</p>
+
+          <p class="text-opacity-80 dark:text-white text-black">— finished the first freelance project <span class="font-bold">"Nail Courses (Meow)"</span>  for online sales of manicure courses</p>
+
+          <p class=" text-opacity-80 dark:text-white text-black">— developed <span class="font-bold"> Tournament Website</span> with Figma ready-made design for a local Tournament Community</p>
+
+          <p class=" text-opacity-80 dark:text-white text-black">— worked on <span class="font-bold">VTubers Insights</span> for live viewer predictions for a local startup. Made a full-fledged interface ready for API integration</p>
+
+          <p class="text-opacity-80 dark:text-white text-black">— created <span class="font-bold">Livermore Trading Tables</span> for a stock swing-trader</p>
+  
         </div>
-       
+        
       </div>
     </div>
-   
+  </section>
+
+  <section class="w-full max-w-screen-xl px-10 mt-24 mx-auto h-auto  dark:text-white text-black flex">
+    <div class="w-1/4 h-full font-mono">
+      <h3>SKILLS</h3>
+    </div>
+    <div class="w-3/4 h-[50rem] flex flex-col">
+      <div class="w-full h-48 text-start ">
+        <p class="flex justify-between">
+          <span class="text-lg font-bold uppercase">A comprehensive set of skills and tools for creating web applications of varying complexity</span>
+          
+        </p>
+        <p class="text-indigo-400 font-thin">Front-End development</p>
+        <div class="mt-6 space-y-6">
+          <p class=" text-opacity-80 dark:text-white text-black">— <span class="font-bold">Vue.js</span> offers a high-speed performance thanks to its virtual DOM, component-based architecture, and two-way binding.<br><br><span class="darK:font-thin font-light">Also, over 700,000 web applications have been designed with the help of this front-end framework, including popular brands such as Alibaba, Reuters, 9gag, Xiaomi, and Ride Receipts</span></p>
+
+          <p class="text-opacity-80 dark:text-white text-black">—  <span class="font-bold">Tailwind CSS</span>, a utility-first CSS framework designed to enable users to create applications faster and easier.</p>
+
+          <p class=" text-opacity-80 dark:text-white text-black">— <span class="font-bold ">Git</span>, a mature, actively maintained open source revision control system used by thousands of developers around the world.</p>
+
+          <p class=" text-opacity-80 dark:text-white text-black font-bold">— HTML, CSS, SaaS</p>
+
+          <p class="text-opacity-80 dark:text-white text-black">— <span class="font-bold ">JavaScript</span>, a Programming Language for the Web. It can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.</p>
+  
+          <p class="text-opacity-80 dark:text-white text-black">— <span class="font-bold">AJAX</span> allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes.</p>
+        </div>
+        
+      </div>
+    </div>
   </section>
 </template>
 
