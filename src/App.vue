@@ -1,36 +1,12 @@
-<script setup>
-import { SunIcon, EnvelopeIcon} from '@heroicons/vue/24/solid'
-
-// Add dark-theme by default
-document.documentElement.classList.add('dark');
-
-let isDarkMode = true;
-
-function setDarkMode(){
-  if(!isDarkMode) {
-    document.documentElement.classList.add('dark');
-    isDarkMode = !isDarkMode;
-  }
-   
-  else{
-    document.documentElement.classList.remove('dark');
-    isDarkMode = !isDarkMode;
-  }
-}
-
-function sendEmail() {
-    window.location.href = "mailto:evdevosh@gmail.com?subject=Subject%20of%20the%20email&body=Hello%20there!";
-}
-</script>
 
 <template>
   <header class="w-full flex flex-col items-center overflow-x-hidden h-auto">
     <div class="w-full h-24 flex justify-between  items-center container max-w-screen-xl px-10 md:text-base sm:text-sm text-xs">
       <span class="dark:text-white text-black font-mono">IV. Portfolio</span>
       <nav class="dark:text-white text-black space-x-4 md:space-x-6 flex font-mono items-center">
-        <a class="hover:text-indigo-400" href="#">Projects</a>
-        <a class="hover:text-pink-400" href="#">Resume</a>
-        <a class="hover:text-[#33D2FF]" href="#">Contact</a>
+        <a id="scroll-project-button" class="hover:text-indigo-400" href="#">Projects</a>
+        <a id="scroll-resume-button" class="hover:text-pink-400" href="#">Resume</a>
+        <a @click="sendEmail()" class="hover:text-[#33D2FF]" href="#">Contact</a>
         <SunIcon @click="setDarkMode" class="h-7 text-black dark:text-white cursor-pointer"/>
       </nav>
     </div>
@@ -97,7 +73,7 @@ function sendEmail() {
     </section>
   </header>
 
-  <main class="w-full max-w-screen-xl px-10 mt-24 md:mt-32 mx-auto h-auto  dark:text-white text-black overflow-x-hidden">
+  <main id="project-section"  class="w-full max-w-screen-xl px-10 mt-24 md:mt-32 mx-auto h-auto  dark:text-white text-black overflow-x-hidden">
     <h2 class="font-mono">FEATURED PROJECTS</h2>
     <div class="w-full h-full mt-16 flex flex-col space-y-10 md:space-y-0 md:grid md:grid-rows-3 md:grid-cols-2 md:gap-x-24 md:gap-y-12 ">
       <div class="w-full h-auto bg-transparent hover:bg-black/10 p-2 rounded-lg">
@@ -272,7 +248,7 @@ function sendEmail() {
     </div>
   </main>
 
-  <section  class="w-full max-w-screen-xl px-10 mt-48 mx-auto h-auto overflow-y-hidden md:h-[20rem] dark:text-white text-black grid grid-cols-1 md:flex overflow-x-hidden">
+  <section id="resume-section"  class="w-full max-w-screen-xl px-10 mt-48 mx-auto h-auto overflow-y-hidden md:h-[20rem] dark:text-white text-black grid grid-cols-1 md:flex overflow-x-hidden">
     <div class="h-16 w-full md:w-1/4 md:h-full font-mono md:text-base text-sm">
       <h3>EXPERIENCE</h3>
     </div>
@@ -370,6 +346,51 @@ function sendEmail() {
   </footer>
 </template>
 
+
+<script setup>
+import { SunIcon, EnvelopeIcon} from '@heroicons/vue/24/solid'
+
+// Add dark-theme by default
+document.documentElement.classList.add('dark');
+
+let isDarkMode = true;
+
+function setDarkMode(){
+  if(!isDarkMode) {
+    document.documentElement.classList.add('dark');
+    isDarkMode = !isDarkMode;
+  }
+   
+  else{
+    document.documentElement.classList.remove('dark');
+    isDarkMode = !isDarkMode;
+  }
+}
+
+function sendEmail() {
+    window.location.href = "mailto:evdevosh@gmail.com?subject=Subject%20of%20the%20email&body=Hello%20there!";
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('scroll-project-button').addEventListener('click', function() {
+            document.getElementById('project-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('scroll-resume-button').addEventListener('click', function() {
+            document.getElementById('resume-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+});
+
+</script>
 <style>
+html {
+  scroll-behavior: smooth;
+}
 
 </style>
