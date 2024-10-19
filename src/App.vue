@@ -302,7 +302,7 @@
       </div>
     </div>
   </section>
-  <footer class="w-full  max-w-screen-xl h-auto pb-24 md:pb-0 md:h-[15rem]   mt-12  flex mx-auto px-10 flex-col justify-start items-center overflow-x-hidden">
+  <footer class="w-full overflow-y-hidden  max-w-screen-xl h-auto pb-24 md:pb-0 md:h-[15rem]   mt-12  flex mx-auto px-10 flex-col justify-start items-center overflow-x-hidden">
     <div class="w-full h-2 border-t dark:border-white border-black">
      
     </div>
